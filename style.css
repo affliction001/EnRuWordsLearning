@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  box-sizing: border-box;
+  transition: 150ms;
+}
+
+body {
+  background: linear-gradient(320deg, #000 20%, #fff 80%);
+}
+
+#root {
+  padding: 5% 10%;
+  margin: 30vh auto;
+  width: 60vw;
+  height: 40vh;
+  background: #ccc url('paper_grid.png') no-repeat center center / cover;
+  border-radius: 50px;
+  border: 1px solid #aaa;
+  box-shadow: 4px 4px 2px #fff, -4px -4px 2px #000;
+}
+
+.startWord, .translateWord, .count {
+  border: 3px solid #00f;
+  border-radius: 20px;
+  height: 28%;
+  background-color: #fff;
+  font-family: fantasy;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.startWord {
+  background-color: #afa;
+  letter-spacing: 3px;
+  font-size: 35px;
+}
+
+.translateWord {
+  margin-top: 3%;
+  padding: 0;
+  position: relative;
+}
+
+.translateWord:focus {
+  outline: none;
+}
+
+.input-field, .check-button {
+  font-family: fantasy;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  height: 100%;
+  position: absolute;
+}
+
+.input-field {
+  left: 0;
+  height: 100%;
+  width: 70%;
+  border: 1px solid black;
+  outline: none;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.check-button {
+  right: 0;
+  width: 30%;
+  border: none;
+  border-left: 5px solid #000;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  background-color: rgba(0, 0, 255, 0.4);
+  padding: 0 20px;
+}
+
+.check-button:hover {
+  background-color: rgba(0, 0, 255, 0.6);
+  color: rgba(255, 255, 0, 0.7);
+}
+
+.check-button:active {
+  background-color: rgba(0, 0, 255, 0.8);
+  color: #ff0;
+}
+
+.count {
+  margin: 3% auto 0;
+  width: 30%;
+  background-color: #aaf;
+}
+
+#true {
+  background-color: #cfc;
+  border: 5px solid #0f0;
+}
+
+#false {
+  background-color: #fcc;
+  border: 5px solid #f00;
+}
