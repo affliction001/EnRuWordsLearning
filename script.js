@@ -14,8 +14,18 @@ const lvl1 = document.querySelector('.lvl-1');
 const lvl2 = document.querySelector('.lvl-2');
 const lvl3 = document.querySelector('.lvl-3');
 
-document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.8) + 'px';
-document.querySelector('#root').style.height = (document.querySelector('body').clientHeight * 0.8) + 'px';
+if (document.querySelector('body').clientWidth < document.querySelector('body').clientHeight) {
+  document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.9) + 'px';
+  document.querySelector('#root').style.height = (document.querySelector('body').clientWidth * 0.9 * 0.6) + 'px';
+} else {
+  if (document.querySelector('body').clientWidth < 960) {
+    document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.9) + 'px';
+    document.querySelector('#root').style.height = (document.querySelector('body').clientHeight * 0.9) + 'px';
+  } else {
+    document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.7) + 'px';
+    document.querySelector('#root').style.height = (document.querySelector('body').clientHeight * 0.7) + 'px';
+  }
+}
 
 // Позиционировал текс по центру полей.
 startWord.style.lineHeight = startWord.clientHeight + 'px';
