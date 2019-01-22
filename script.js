@@ -14,25 +14,12 @@ const lvl1 = document.querySelector('.lvl-1');
 const lvl2 = document.querySelector('.lvl-2');
 const lvl3 = document.querySelector('.lvl-3');
 
+document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.8) + 'px';
+document.querySelector('#root').style.height = (document.querySelector('body').clientHeight * 0.8) + 'px';
+
 // Позиционировал текс по центру полей.
 startWord.style.lineHeight = startWord.clientHeight + 'px';
 count.style.lineHeight = count.clientHeight + 'px';
-window.addEventListener('resize', e => {
-  startWord.style.lineHeight = startWord.clientHeight + 'px';
-  count.style.lineHeight = count.clientHeight + 'px';
-  setTimeout(function() {
-    startWord.style.lineHeight = startWord.clientHeight + 'px';
-    count.style.lineHeight = count.clientHeight + 'px';
-  }, 50);
-  setTimeout(function() {
-    startWord.style.lineHeight = startWord.clientHeight + 'px';
-    count.style.lineHeight = count.clientHeight + 'px';
-  }, 100);
-  setTimeout(function() {
-    startWord.style.lineHeight = startWord.clientHeight + 'px';
-    count.style.lineHeight = count.clientHeight + 'px';
-  }, 150);
-});
 
 // Загружаю данные из локального хранилища при загрузке страницы.
 if (localStorage['myWords'] === undefined) { localStorage['myWords'] = JSON.stringify(startList); }
