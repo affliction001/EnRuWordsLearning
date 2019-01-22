@@ -18,7 +18,7 @@ if (document.querySelector('body').clientWidth < document.querySelector('body').
   document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.9) + 'px';
   document.querySelector('#root').style.height = (document.querySelector('body').clientWidth * 0.9 * 0.6) + 'px';
 } else {
-  if (document.querySelector('body').clientWidth < 960) {
+  if (document.querySelector('body').clientWidth < 1200) {
     document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.9) + 'px';
     document.querySelector('#root').style.height = (document.querySelector('body').clientHeight * 0.9) + 'px';
   } else {
@@ -28,8 +28,8 @@ if (document.querySelector('body').clientWidth < document.querySelector('body').
 }
 
 // Позиционировал текс по центру полей.
-startWord.style.lineHeight = startWord.clientHeight + 'px';
-count.style.lineHeight = count.clientHeight + 'px';
+startWord.style.lineHeight = startWord.offsetHeight + 'px';
+count.style.lineHeight = count.offsetHeight + 'px';
 
 // Загружаю данные из локального хранилища при загрузке страницы.
 if (localStorage['myWords'] === undefined) { localStorage['myWords'] = JSON.stringify(startList); }
