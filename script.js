@@ -128,12 +128,11 @@ goToNextWord();
 checkButton.addEventListener('click', event => {
   if (inputField.value.toLowerCase() === wordToFind.toLowerCase() && inputField.value !== '' && inputField.value !== undefined) {
     inputField.setAttribute('id', 'true');
-    inputField.value = 'True';
     wordToCheck.lvl += 1;
     totalCount++;
   } else {
     inputField.setAttribute('id', 'false');
-    inputField.value = 'False';
+    inputField.value = wordToFind;
     wordToCheck.lvl = 0;
   }
 

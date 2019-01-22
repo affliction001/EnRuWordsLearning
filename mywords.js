@@ -8,4 +8,7 @@ const startList = [
   {en: 'objective', ru: 'цель', lvl: 0},
   {en: 'consider', ru: 'считать', lvl: 0},
   {en: 'fit', ru: 'подходит', lvl: 0},
+  {en: 'serve', ru: 'служить', lvl: 0},
+  {en: 'assume', ru: 'предполагать', lvl: 0},
+  {en: 'suffer', ru: 'страдать', lvl: 0}
 ];
