@@ -14,22 +14,26 @@ const lvl1 = document.querySelector('.lvl-1');
 const lvl2 = document.querySelector('.lvl-2');
 const lvl3 = document.querySelector('.lvl-3');
 
-if (document.querySelector('body').clientWidth < document.querySelector('body').clientHeight) {
-  document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.9) + 'px';
-  document.querySelector('#root').style.height = (document.querySelector('body').clientWidth * 0.9 * 0.6) + 'px';
-} else {
-  if (document.querySelector('body').clientWidth < 1200) {
+function positionApp() {
+  if (document.querySelector('body').clientWidth < document.querySelector('body').clientHeight) {
     document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.9) + 'px';
-    document.querySelector('#root').style.height = (document.querySelector('body').clientHeight * 0.9) + 'px';
+    document.querySelector('#root').style.height = (document.querySelector('body').clientWidth * 0.9 * 0.5) + 'px';
   } else {
-    document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.7) + 'px';
-    document.querySelector('#root').style.height = (document.querySelector('body').clientHeight * 0.7) + 'px';
+    if (document.querySelector('body').clientWidth < 900) {
+      document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.9) + 'px';
+      document.querySelector('#root').style.height = (document.querySelector('body').clientWidth * 0.9 * 0.5) + 'px';
+    } else {
+      document.querySelector('#root').style.width = (document.querySelector('body').clientWidth * 0.6) + 'px';
+      document.querySelector('#root').style.height = (document.querySelector('body').clientWidth * 0.6 * 0.5) + 'px';
+    }
   }
 }
 
-// Позиционировал текс по центру полей.
-startWord.style.lineHeight = startWord.offsetHeight + 'px';
-count.style.lineHeight = count.offsetHeight + 'px';
+positionApp();
+
+window.addEventListener('resize', event => {
+  positionApp();
+});
 
 // Загружаю данные из локального хранилища при загрузке страницы.
 if (localStorage['myWords'] === undefined) { localStorage['myWords'] = JSON.stringify(startList); }

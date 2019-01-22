@@ -26,12 +26,12 @@ body {
 .startWord, .translateWord, .count {
   border: 3px solid #00f;
   border-radius: 20px;
-  height: 28%;
   background-color: #fff;
   font-family: fantasy;
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
+  padding: 3%;
 }
 
 .startWord {
@@ -43,6 +43,7 @@ body {
 .translateWord {
   margin-top: 3%;
   padding: 0;
+  height: 25%;
   position: relative;
 }
 
@@ -118,7 +119,12 @@ body {
   font-size: 25px;
   font-weight: bold;
   font-style: italic;
-  padding: 0 5px;
+  padding: 0 15px;
+  line-height: 1;
+}
+
+.lvl-1, .lvl-2 {
+  margin-bottom: 10px;
 }
 
 .new-word-button {
