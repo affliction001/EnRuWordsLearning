@@ -20,6 +20,18 @@ count.style.lineHeight = count.clientHeight + 'px';
 window.addEventListener('resize', e => {
   startWord.style.lineHeight = startWord.clientHeight + 'px';
   count.style.lineHeight = count.clientHeight + 'px';
+  setTimeout(function() {
+    startWord.style.lineHeight = startWord.clientHeight + 'px';
+    count.style.lineHeight = count.clientHeight + 'px';
+  }, 50);
+  setTimeout(function() {
+    startWord.style.lineHeight = startWord.clientHeight + 'px';
+    count.style.lineHeight = count.clientHeight + 'px';
+  }, 100);
+  setTimeout(function() {
+    startWord.style.lineHeight = startWord.clientHeight + 'px';
+    count.style.lineHeight = count.clientHeight + 'px';
+  }, 150);
 });
 
 // Загружаю данные из локального хранилища при загрузке страницы.
