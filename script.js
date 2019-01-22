@@ -151,11 +151,10 @@ checkButton.addEventListener('click', event => {
     maintainCurrentWordCounts();
   }
 
+  saveData();
   lvl1.textContent = `Level 1 - ${localStorage['lvl1']}`;
   lvl2.textContent = `Level 2 - ${localStorage['lvl2']}`;
   lvl3.textContent = `Level 3 - ${localStorage['lvl3']}`;
-
-  saveData();
 
   setTimeout(() => {
     inputField.setAttribute('id', '');
