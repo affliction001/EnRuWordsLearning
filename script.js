@@ -133,24 +133,35 @@ checkButton.addEventListener('click', event => {
   } else {
     inputField.setAttribute('id', 'false');
     inputField.value = wordToFind;
+
+    if (wordToCheck.lvl >= 8) {
+      moveWordToNextLevel(wordToCheck, third, first);
+      --localStorage['lvl2'];
+      --localStorage['lvl1'];
+    } else if (wordToCheck.lvl >= 5) {
+      moveWordToNextLevel(wordToCheck, second, first);
+      --localStorage['lvl1'];
+    }
+
     wordToCheck.lvl = 0;
   }
 
   count.textContent = wordToCheck.lvl;
 
-  if (wordToCheck.lvl >= 10) {
+  if (wordToCheck.lvl === 10) {
     ++localStorage['lvl3'];
     third.splice(findWordsIndexInArray(wordToCheck, third), 1);
-  } else if (wordToCheck.lvl >= 8) {
+  } else if (wordToCheck.lvl === 8) {
     ++localStorage['lvl2'];
     moveWordToNextLevel(wordToCheck, second, third);
-  } else if (wordToCheck.lvl >= 5) {
+  } else if (wordToCheck.lvl === 5) {
     ++localStorage['lvl1'];
     moveWordToNextLevel(wordToCheck, first, second);
-    maintainCurrentWordCounts();
   }
 
+  maintainCurrentWordCounts();
   saveData();
+
   lvl1.textContent = `Level 1 - ${localStorage['lvl1']}`;
   lvl2.textContent = `Level 2 - ${localStorage['lvl2']}`;
   lvl3.textContent = `Level 3 - ${localStorage['lvl3']}`;

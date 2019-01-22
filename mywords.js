@@ -10,5 +10,14 @@ const startList = [
   {en: 'fit', ru: 'подходит', lvl: 0},
   {en: 'serve', ru: 'служить', lvl: 0},
   {en: 'assume', ru: 'предполагать', lvl: 0},
-  {en: 'suffer', ru: 'страдать', lvl: 0}
+  {en: 'suffer', ru: 'страдать', lvl: 0},
+  {en: 'establishe', ru: 'установленный', lvl: 0},
+  {en: 'had led', ru: 'привел', lvl: 0},
+  {en: 'solution', ru: 'решение', lvl: 0},
+  {en: 'earn', ru: 'зарабатывать', lvl: 0},
+  {en: 'effort', ru: 'усилие', lvl: 0},
+  {en: 'benefit', ru: 'польза', lvl: 0},
+  {en: 'faith', ru: 'вера', lvl: 0},
+  {en: 'competition', ru: 'соревнование', lvl: 0},
+  {en: 'permission', ru: 'разрешение', lvl: 0}
 ];
