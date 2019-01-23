@@ -95,7 +95,7 @@ body {
 .count {
   margin: 3% auto 0;
   width: 30%;
-  background-color: #aaf;
+  background-color: #fff;
 }
 
 #true {
@@ -292,6 +292,7 @@ body {
   #root {
     width: 400px;
     height: 250px;
+    margin-top: 20px;
   }
 
   .startWord, .input-field, .check-button, .count {
@@ -335,6 +336,7 @@ body {
   #root {
     width: 350px;
     height: 200px;
+    margin-top: 10px;
   }
 
   .startWord, .input-field, .check-button {
@@ -367,6 +369,7 @@ body {
     border-bottom: 2px solid #d00;
     color: #a00;
     font-size: 16px;
+    padding: 0 10px;
   }
 
   .lvl-1, .lvl-2 {
@@ -387,7 +390,7 @@ body {
   #root {
     width: 300px;
     height: 200px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 5%;
   }
 
@@ -421,6 +424,7 @@ body {
     border-bottom: 2px solid #d00;
     color: #a00;
     font-size: 14px;
+    padding: 0 5px;
   }
 
   .lvl-1, .lvl-2 {
