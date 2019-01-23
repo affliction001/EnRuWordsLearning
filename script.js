@@ -118,6 +118,8 @@ let wordToFind = '';
 goToNextWord();
 
 checkButton.addEventListener('click', event => {
+  checkButton.style = 'display: none;';
+  inputField.style = 'width: 100%; border-radius: 18px;';
   if (inputField.value.toLowerCase() === wordToFind.toLowerCase() && inputField.value !== '' && inputField.value !== undefined) {
     inputField.setAttribute('id', 'true');
     wordToCheck.lvl += 1;
@@ -161,11 +163,13 @@ checkButton.addEventListener('click', event => {
   setTimeout(() => {
     inputField.setAttribute('id', '');
     inputField.value = '';
-  }, 1000);
+  }, 2500);
 
   setTimeout(() => {
+    checkButton.style = 'display: block;';
+    inputField.style = 'width: 70%; border-top-right-radius: 0px; border-bottom-right-radius: 0px;';
     goToNextWord();
-  }, 1200);
+  }, 2550);
 });
 
 newWordButton.addEventListener('click', event => {
