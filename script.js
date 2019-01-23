@@ -178,7 +178,9 @@ newWordButton.addEventListener('click', event => {
 
 newWordAdd.addEventListener('click', e => {
   const EN = newWordValue.value;
+  newWordValue.value = '';
   const RU = newWordTranslation.value;
+  newWordTranslation.value = '';
 
   if ((EN !== undefined || EN !== '') && (RU !== undefined || RU !== '')) {
     const myWords = JSON.parse(localStorage['myWords']);
