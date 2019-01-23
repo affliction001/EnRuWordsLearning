@@ -161,11 +161,11 @@ checkButton.addEventListener('click', event => {
   setTimeout(() => {
     inputField.setAttribute('id', '');
     inputField.value = '';
-  }, 500);
+  }, 1000);
 
   setTimeout(() => {
     goToNextWord();
-  }, 600);
+  }, 1200);
 });
 
 newWordButton.addEventListener('click', event => {
