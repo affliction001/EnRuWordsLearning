@@ -8,15 +8,17 @@
 
 body {
   height: 100vh;
-  background: #000 linear-gradient(320deg, #000 20%, #fff 80%) no-repeat center center / cover;
+  width: 100vw;
+  overflow: hidden;
+  background: #000 linear-gradient(330deg, #000 30%, #fff 80%) no-repeat center center / cover;
 }
 
 #root {
   position: relative;
   padding: 5% 10%;
-  margin: 10vh auto;
-  width: 80vw;
-  height: 80vh;
+  margin: 100px auto;
+  width: 1000px;
+  height: 500px;
   background: #ccc url('paper_grid.png') no-repeat center center / cover;
   border-radius: 50px;
   border: 1px solid #aaa;
@@ -209,4 +211,96 @@ body {
 
 .hide-element {
   display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  #root {
+    width: 800px;
+    height: 400px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #root {
+    width: 600px;
+    height: 300px;
+  }
+
+  .startWord, .input-field, .check-button {
+    font-size: 25px;
+  }
+
+  .translateWord {
+    height: 60px;
+  }
+
+  .lvl-1, .lvl-2, .lvl-3 {
+    border-bottom: 2px solid #d00;
+    color: #a00;
+    font-size: 20px;
+  }
+
+  .lvl-1, .lvl-2 {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #root {
+    width: 500px;
+    height: 250px;
+  }
+
+  .startWord, .input-field, .check-button {
+    font-size: 22px;
+  }
+
+  .translateWord {
+    height: 60px;
+  }
+
+  .lvl-1, .lvl-2, .lvl-3 {
+    border-bottom: 2px solid #d00;
+    color: #a00;
+    font-size: 20px;
+  }
+
+  .lvl-1, .lvl-2 {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #root {
+    width: 400px;
+    height: 250px;
+  }
+
+  .startWord, .input-field, .check-button, .count {
+    font-size: 20px;
+  }
+
+  .check-button {
+    padding: 0;
+  }
+
+  .translateWord {
+    height: 50px;
+  }
+
+  .status {
+    right: 5%;
+    bottom: 8%;
+  }
+
+  .lvl-1, .lvl-2, .lvl-3 {
+    border-bottom: 2px solid #d00;
+    color: #a00;
+    font-size: 20px;
+  }
+
+  .lvl-1, .lvl-2 {
+    margin-bottom: 5px;
+  }
 }
