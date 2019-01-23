@@ -8,7 +8,6 @@
 
 body {
   height: 100vh;
-  width: 100vw;
   overflow: hidden;
   background: #000 linear-gradient(330deg, #000 30%, #fff 80%) no-repeat center center / cover;
 }
@@ -244,6 +243,15 @@ body {
   .lvl-1, .lvl-2 {
     margin-bottom: 5px;
   }
+
+  .new-word-field, .new-translation-field, .new-word-add {
+    border: 3px solid #00f;
+    border-radius: 20px;
+    width: 90%;
+    padding: 0 10px;
+    font-size: 25px;
+    left: 5%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -268,6 +276,15 @@ body {
 
   .lvl-1, .lvl-2 {
     margin-bottom: 5px;
+  }
+
+  .new-word-field, .new-translation-field, .new-word-add {
+    border: 2px solid #00f;
+    border-radius: 10px;
+    width: 90%;
+    padding: 0 10px;
+    font-size: 22px;
+    left: 5%;
   }
 }
 
@@ -302,5 +319,120 @@ body {
 
   .lvl-1, .lvl-2 {
     margin-bottom: 5px;
+  }
+
+  .new-word-field, .new-translation-field, .new-word-add {
+    border: 2px solid #00f;
+    border-radius: 10px;
+    width: 90%;
+    padding: 0 10px;
+    font-size: 22px;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #root {
+    width: 350px;
+    height: 200px;
+  }
+
+  .startWord, .input-field, .check-button {
+    font-size: 20px;
+  }
+
+  .startWord {
+    padding: 5px;
+  }
+
+  .count {
+    font-size: 16px;
+  }
+
+  .check-button {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .translateWord {
+    height: 40px;
+  }
+
+  .status {
+    right: 5%;
+    bottom: 8%;
+  }
+
+  .lvl-1, .lvl-2, .lvl-3 {
+    border-bottom: 2px solid #d00;
+    color: #a00;
+    font-size: 16px;
+  }
+
+  .lvl-1, .lvl-2 {
+    margin-bottom: 5px;
+  }
+
+  .new-word-field, .new-translation-field, .new-word-add {
+    border: 2px solid #00f;
+    border-radius: 10px;
+    width: 90%;
+    padding: 0 10px;
+    font-size: 18px;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #root {
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    padding: 5%;
+  }
+
+  .startWord, .input-field, .check-button {
+    font-size: 20px;
+  }
+
+  .startWord {
+    padding: 5px;
+  }
+
+  .count {
+    font-size: 16px;
+  }
+
+  .check-button {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .translateWord {
+    height: 40px;
+  }
+
+  .status {
+    right: 5%;
+    bottom: 8%;
+  }
+
+  .lvl-1, .lvl-2, .lvl-3 {
+    border-bottom: 2px solid #d00;
+    color: #a00;
+    font-size: 14px;
+  }
+
+  .lvl-1, .lvl-2 {
+    margin-bottom: 5px;
+  }
+
+  .new-word-field, .new-translation-field, .new-word-add {
+    border: 2px solid #00f;
+    border-radius: 10px;
+    width: 90%;
+    padding: 0 10px;
+    font-size: 18px;
+    left: 5%;
   }
 }
